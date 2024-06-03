@@ -14,9 +14,11 @@ app.use(express.json())
 app.use("/posts",postRouter)
 app.use("/users",userRouter)
 app.use("/comments",commentRouter)
-
-
 connection()
+
+app.get('/', (req, res) => {
+  return  res.status(201).send('helllo')
+})
 
 app.get('*', (req, res) => {
     res.send('404 Not Founded')

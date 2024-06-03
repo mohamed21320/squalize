@@ -11,7 +11,10 @@
   "devDependencies": {},
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "satrt": "node index.js"
+  },
+  "engines": {
+    "node": "20.12.2"
   },
   "keywords": [],
   "author": "",
